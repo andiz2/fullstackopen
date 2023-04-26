@@ -5,18 +5,18 @@ The application that we will start working on in this exercise will be further d
 
 Use create-react-app to initialize a new application. Modify index.js to match the following
 
-<code>
+```
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />)
-</code>
+```
 
 and App.js to match the following
 
-<code>
+```
 const App = () => {
   const course = 'Half Stack application development'
   const part1 = 'Fundamentals of React'
@@ -44,7 +44,7 @@ const App = () => {
 }
 
 export default App
-</code>
+```
 
 and remove extra files (App.css, App.test.js, index.css, logo.svg, setupTests.js, reportWebVitals.js)).
 
@@ -54,7 +54,7 @@ Define the new components in the file App.js.
 
 The App component's body will approximately be as follows:
 
-<code>
+```
 const App = () => {
   // const-definitions
 
@@ -66,7 +66,7 @@ const App = () => {
     </div>
   )
 }
-</code>
+```
 
 WARNING Don't try to program all the components concurrently, because that will almost certainly break down the whole app. Proceed in small steps, first make e.g. the component Header and only when it works for sure, you could proceed to the next component.
 
@@ -81,7 +81,7 @@ WARNING2 create-react-app automatically makes the project a git repository unles
 1.2: course information, step2
 Refactor the Content component so that it does not render any names of parts or their number of exercises by itself. Instead, it only renders three Part components of which each renders the name and number of exercises of one part.
 
-<code>
+```
 const Content = ... {
   return (
     <div>
@@ -91,6 +91,6 @@ const Content = ... {
     </div>
   )
 }
-</code>
+```
 
 Our application passes on information in quite a primitive way at the moment, since it is based on individual variables. We shall fix that in part 2, but before that, let's go to part1b to learn about JavaScript.
